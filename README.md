@@ -1,2 +1,2 @@
-# TDTSP
-Two heuristic for the TDTSP problem
+# TSPP
+Two heuristic for the TSPP problem
