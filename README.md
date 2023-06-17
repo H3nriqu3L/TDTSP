@@ -1,2 +1,10 @@
 # TSPP
 Two heuristic for the TSPP problem
+
+This project, proposed in the Metaheuristics course at UFV (Federal University of Viçosa),  consists of implementing heuristic methods to solve a variant of the Traveling Salesman Problem (TSP), a classic problem in combinatorial optimization. In the TSP, given a set of n cities and the distance between each pair of cities, the goal is to determine the shortest total distance route that visits each city exactly once and returns to the origin city. It is a problem classified as NP-Hard, meaning that no efficient algorithm is known to solve it, and it is not even known if it is possible to develop one.
+
+In the variation studied in this work, called TSPP, each city can indicate its preference for when it wants to be visited by the salesman. For example, one city may prefer to be visited early in the route, while another city may prefer to be visited in the middle or at the end. Cities that are not visited according to their preference generate "penalties" determined by each city. The total cost of a route is then the cost of traversing it (proportional to the total distance) plus the cost of the penalties. For instance, if city 6 prefers to be visited at the beginning of the route and city 3 at the end, depending on the penalty values for not following these preferences, the route on the right in Figure 1 may be a better solution than the one in the center, even though it covers a greater distance.
+
+The objective of this project is to implement and evaluate heuristic methods to find near-optimal solutions for the TSPP, considering both the distances between cities and the penalties associated with violating the cities' preferences. The implemented methods will be compared based on their solution quality and computational efficiency. The source code and the obtained results are available in this repository for further exploration and analysis.
+
+There are also two PDF files containing a report on the development of the heuristics and the results obtained.
